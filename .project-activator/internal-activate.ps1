@@ -12,7 +12,7 @@ else {
 }
 
 # Virtual Environment path creation/check
-if (-not (Test-Path 'venv')) {
+if (-not (Test-Path '../.venv')) {
     Write-Host 'Virtual environment path not found.' -ForegroundColor Red
     exit 1
 }
@@ -23,7 +23,7 @@ else {
 # Virtual environment activation/check
 if (!$env:VIRTUAL_ENV) {
     Write-Host 'Activating virtual environment...' -ForegroundColor Green
-    & .\venv\Scripts\Activate.ps1
+    & ..\.venv\Scripts\Activate.ps1
 }
 else {
     Write-Host 'Virtual environment already activated' -ForegroundColor Green
