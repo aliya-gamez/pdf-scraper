@@ -14,14 +14,14 @@ else {
 # Virtual Environment path creation/check
 if (-not (Test-Path 'venv')) {
     Write-Host 'Virtual environment path not found, creating now...' -ForegroundColor Yellow
-    python -m venv venv
+    python -m venv .venv
 }
 else {
     Write-Host 'Virtual environment path found' -ForegroundColor Green
 }
 
 # Verify: Virtual Environment path creation/check
-if (-not (Test-Path 'venv')) {
+if (-not (Test-Path '.venv')) {
     Write-Host 'Virtual environment path failed to create normally.' -ForegroundColor Red
     exit 1
 }
