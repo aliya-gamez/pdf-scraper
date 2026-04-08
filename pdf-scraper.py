@@ -130,7 +130,7 @@ def main():
     df = pd.DataFrame(rows)
     df.to_csv(directory+"/pdf_list.csv",index=False,encoding="utf-8-sig")
     summary1 = df.groupby("page_found_on").size().reset_index(name="pdf_count")
-    summary1.to_csv(directory+"/pdf_summary1.csv",index=False)
+    summary1.to_csv(directory+"/pdf_list_summary1.csv",index=False)
     summary2 = (
         df.groupby(["pdf_url","file_name","imce_path"])
         .agg(
@@ -142,7 +142,7 @@ def main():
         .reset_index()
     )
 
-    summary2.to_csv(directory+"/pdf_summary2.csv",index=False)
+    summary2.to_csv(directory+"/pdf_list_summary2.csv",index=False)
     # print end results to console table
     print('\n')
     table = Table(title='Final Output',show_header=False)
