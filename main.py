@@ -1,3 +1,14 @@
+# /// script
+# requires-python = ">=3.14"
+# dependencies = [
+#     "beautifulsoup4>=4.14.3",
+#     "pandas>=3.0.2",
+#     "pypdf>=6.9.2",
+#     "requests>=2.33.1",
+#     "rich>=14.3.3",
+# ]
+# ///
+
 import re
 import os
 from urllib.parse import urlparse,unquote,urljoin
