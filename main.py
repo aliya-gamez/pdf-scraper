@@ -11,7 +11,6 @@ from rich import print
 from rich.console import Console
 from rich.table import Table
 
-#
 DOMAIN = 'uhs.fsu.edu' # format: no https or www
 GET_PDF_TITLES = False
 CHECK_ACCESSIBLITY = False
@@ -22,7 +21,6 @@ SKIP_URL_STRINGS = [
     '/blueprint/',
     '/seminole-success-stories/'
 ]
-#
 
 crawled_pages = set()
 found_pdfs = set()
@@ -151,7 +149,6 @@ def main():
     console = Console()
     console.print(table)
 
-    
 
 if __name__ == "__main__":
     main()

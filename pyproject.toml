@@ -1,0 +1,13 @@
+[project]
+name = "pdf-scraper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "beautifulsoup4==4.14.3",
+    "pandas==3.0.2",
+    "pypdf==6.9.2",
+    "requests==2.33.1",
+    "rich==14.3.3",
+]
