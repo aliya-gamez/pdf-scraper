@@ -22,7 +22,7 @@ from rich import print
 from rich.console import Console
 from rich.table import Table
 
-DOMAIN = 'uhs.fsu.edu' # format: no https or www
+DOMAIN = 'career.fsu.edu' # format: no https or www
 GET_PDF_TITLES = False
 CHECK_ACCESSIBLITY = False
 PRINT_LENGTH = 75
